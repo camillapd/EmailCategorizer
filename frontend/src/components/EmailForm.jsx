@@ -54,7 +54,7 @@ const EmailForm = ({ onSubmit }) => {
     if (text.trim()) formData.append("my_text", text);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/categorize", {
+      const response = await fetch("https://emailcategorizer-i9fv.onrender.com/", {
         method: "POST",
         body: formData,
       });
