@@ -54,7 +54,7 @@ const EmailForm = ({ onSubmit }) => {
     if (text.trim()) formData.append("my_text", text);
 
     try {
-      const response = await fetch("https://emailcategorizer-i9fv.onrender.com/", {
+      const response = await fetch("https://emailcategorizer-i9fv.onrender.com/categorize", {
         method: "POST",
         body: formData,
       });
